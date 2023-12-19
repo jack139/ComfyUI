@@ -1,13 +1,13 @@
 {
   "last_node_id": 238,
-  "last_link_id": 955,
+  "last_link_id": 957,
   "nodes": [
     {
       "id": 102,
       "type": "PrimitiveNode",
       "pos": [
-        -151.23949729919337,
-        159.14921875000138
+        -201.39553074645912,
+        71.4572104492201
       ],
       "size": {
         "0": 210,
@@ -44,8 +44,8 @@
       "id": 101,
       "type": "PrimitiveNode",
       "pos": [
-        -151.23949729919337,
-        19.149218750001147
+        -201.39553074645912,
+        -68.54278955078011
       ],
       "size": {
         "0": 210,
@@ -83,8 +83,8 @@
       "id": 115,
       "type": "PrimitiveNode",
       "pos": [
-        -371.23949729919616,
-        19.149218750001147
+        -421.3955307464617,
+        -68.54278955078011
       ],
       "size": {
         "0": 210,
@@ -124,8 +124,8 @@
       "id": 120,
       "type": "CLIPTextEncodeSDXLRefiner",
       "pos": [
-        471.7160627441406,
-        -571.3801245117183
+        485.33602978515614,
+        -671.0301367187496
       ],
       "size": {
         "0": 400,
@@ -206,8 +206,8 @@
       "id": 81,
       "type": "CLIPTextEncodeSDXLRefiner",
       "pos": [
-        471.7160627441406,
-        -541.3801245117183
+        485.33602978515614,
+        -641.0301367187496
       ],
       "size": {
         "0": 400,
@@ -285,8 +285,8 @@
       "id": 138,
       "type": "PrimitiveNode",
       "pos": [
-        -151.23949729919337,
-        299.1492187500001
+        -201.39553074645912,
+        211.45721044921876
       ],
       "size": {
         "0": 210,
@@ -325,8 +325,8 @@
       "id": 137,
       "type": "PrimitiveNode",
       "pos": [
-        -371.23949729919616,
-        299.1492187500001
+        -421.3955307464617,
+        211.45721044921876
       ],
       "size": {
         "0": 210,
@@ -363,8 +363,8 @@
       "id": 66,
       "type": "PrimitiveNode",
       "pos": [
-        -371.23949729919616,
-        159.14921875000138
+        -421.3955307464617,
+        71.4572104492201
       ],
       "size": {
         "0": 210,
@@ -393,7 +393,7 @@
         "Run widget replace on values": false
       },
       "widgets_values": [
-        422,
+        427,
         "increment"
       ],
       "color": "#233",
@@ -403,8 +403,8 @@
       "id": 139,
       "type": "Reroute",
       "pos": [
-        213.71606274414054,
-        -309.3801245117188
+        227.33602978515617,
+        -409.03013671875004
       ],
       "size": [
         75,
@@ -440,8 +440,8 @@
       "id": 140,
       "type": "Reroute",
       "pos": [
-        213.71606274414054,
-        -370.3801245117188
+        227.33602978515617,
+        -470.03013671875004
       ],
       "size": [
         75,
@@ -476,8 +476,8 @@
       "id": 141,
       "type": "Reroute",
       "pos": [
-        147.71606274414057,
-        -602.3801245117182
+        161.3360297851562,
+        -702.0301367187496
       ],
       "size": [
         75,
@@ -513,8 +513,8 @@
       "id": 126,
       "type": "Reroute",
       "pos": [
-        538.7160627441406,
-        -526.3801245117186
+        552.3360297851564,
+        -626.0301367187499
       ],
       "size": [
         75,
@@ -549,8 +549,8 @@
       "id": 133,
       "type": "Reroute",
       "pos": [
-        534.7160627441405,
-        -493.3801245117188
+        548.3360297851563,
+        -593.0301367187501
       ],
       "size": [
         75,
@@ -587,8 +587,8 @@
       "id": 82,
       "type": "CLIPTextEncodeSDXL",
       "pos": [
-        475.7160627441406,
-        -373.3801245117188
+        489.33602978515614,
+        -473.03013671875004
       ],
       "size": {
         "0": 400,
@@ -690,8 +690,8 @@
       "id": 75,
       "type": "CLIPTextEncodeSDXL",
       "pos": [
-        479.7160627441406,
-        -422.3801245117188
+        493.33602978515614,
+        -522.03013671875
       ],
       "size": {
         "0": 400,
@@ -794,8 +794,8 @@
       "id": 145,
       "type": "Reroute",
       "pos": [
-        504.7160627441406,
-        -350.3801245117188
+        518.3360297851563,
+        -450.03013671875004
       ],
       "size": [
         75,
@@ -831,8 +831,8 @@
       "id": 210,
       "type": "Reroute",
       "pos": [
-        913.9838823242192,
-        -408.612091308594
+        917.9698632812505,
+        -273.0882504882814
       ],
       "size": [
         75,
@@ -864,397 +864,18 @@
       }
     },
     {
-      "id": 201,
-      "type": "SaveImage",
-      "pos": [
-        2792.9427031250016,
-        -746.9916054687503
-      ],
-      "size": {
-        "0": 430,
-        "1": 480
-      },
-      "flags": {},
-      "order": 43,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 931
-        }
-      ],
-      "title": "2048x Upscale",
-      "properties": {},
-      "widgets_values": [
-        "ComfyUI"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 203,
-      "type": "Reroute",
-      "pos": [
-        2687.9427031250016,
-        -488.9916054687501
-      ],
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 41,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 929,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            954
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 222,
-      "type": "Reroute",
-      "pos": [
-        2677.9427031250016,
-        -762.9916054687503
-      ],
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 42,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 954,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "IMAGE",
-          "links": [
-            931
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 184,
-      "type": "SaveImage",
-      "pos": [
-        2044.9427031250016,
-        -738.9916054687503
-      ],
-      "size": {
-        "0": 430,
-        "1": 480
-      },
-      "flags": {},
-      "order": 35,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 928,
-          "slot_index": 0
-        }
-      ],
-      "title": "Sytan Workflow",
-      "properties": {},
-      "widgets_values": [
-        "ComfyUI"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 234,
-      "type": "Note",
-      "pos": [
-        2497.9427031250016,
-        -655.9916054687503
-      ],
-      "size": {
-        "0": 210,
-        "1": 150
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "title": "Contrast Fix Node",
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Contrast fix is to fix the weird black level issues with SDXL when doing multiple passes. Just mess with the value to achieve the look you want.\n\nThe higher the value you use, the more it will bring down the black tones and re-saturate the colors"
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 134,
-      "type": "Reroute",
-      "pos": [
-        932.9418251953128,
-        -836.7320888671873
-      ],
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 782,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "VAE",
-          "links": [
-            665
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 23,
-      "type": "KSamplerAdvanced",
-      "pos": [
-        928,
-        -547
-      ],
-      "size": {
-        "0": 270,
-        "1": 300
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 918
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 480
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 299
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 55
-        },
-        {
-          "name": "cfg",
-          "type": "FLOAT",
-          "link": 742,
-          "widget": {
-            "name": "cfg"
-          }
-        },
-        {
-          "name": "steps",
-          "type": "INT",
-          "link": 475,
-          "widget": {
-            "name": "steps"
-          }
-        },
-        {
-          "name": "noise_seed",
-          "type": "INT",
-          "link": 482,
-          "widget": {
-            "name": "noise_seed"
-          },
-          "slot_index": 6
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            663
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "Refiner Pass",
-      "properties": {
-        "Node name for S&R": "KSamplerAdvanced"
-      },
-      "widgets_values": [
-        "disable",
-        422,
-        "fixed",
-        25,
-        7.5,
-        "ddim",
-        "normal",
-        20,
-        1000,
-        "disable"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 22,
-      "type": "KSamplerAdvanced",
-      "pos": [
-        937,
-        -92
-      ],
-      "size": {
-        "0": 270,
-        "1": 300
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 536
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 282
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 304
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 794,
-          "slot_index": 3
-        },
-        {
-          "name": "noise_seed",
-          "type": "INT",
-          "link": 214,
-          "widget": {
-            "name": "noise_seed"
-          }
-        },
-        {
-          "name": "cfg",
-          "type": "FLOAT",
-          "link": 380,
-          "widget": {
-            "name": "cfg"
-          }
-        },
-        {
-          "name": "steps",
-          "type": "INT",
-          "link": 721,
-          "widget": {
-            "name": "steps"
-          },
-          "slot_index": 6
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            55
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "Base Pass",
-      "properties": {
-        "Node name for S&R": "KSamplerAdvanced"
-      },
-      "widgets_values": [
-        "enable",
-        422,
-        "fixed",
-        25,
-        7.5,
-        "ddim",
-        "normal",
-        0,
-        20,
-        "enable"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 209,
       "type": "PrimitiveNode",
       "pos": [
-        -154.4920021972656,
-        -121.31200585937498
+        -204.64803564453135,
+        -209.00401416015634
       ],
       "size": {
         "0": 210,
         "1": 82
       },
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -1295,8 +916,8 @@
       "id": 5,
       "type": "EmptyLatentImage",
       "pos": [
-        -374.9859809570313,
-        -123.70599682617186
+        -425.14201440429684,
+        -211.39800512695322
       ],
       "size": {
         "0": 210,
@@ -1305,7 +926,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1331,11 +952,290 @@
       "bgcolor": "#653"
     },
     {
+      "id": 237,
+      "type": "Reroute",
+      "pos": [
+        101.61996704101564,
+        -467.65001220703124
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 947
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            948
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 238,
+      "type": "Reroute",
+      "pos": [
+        103.61996704101564,
+        -410.65001220703124
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 945,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "CLIP",
+          "links": [
+            949
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -413.38003295898443,
+        -681.6500122070313
+      ],
+      "size": {
+        "0": 464.1470947265625,
+        "1": 112.444091796875
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            950
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            725
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            955
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "Refiner Model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "stable-diffusion-xl-refiner-1.0/sd_xl_refiner_1.0.safetensors"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 10,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -413.38003295898443,
+        -447.65001220703124
+      ],
+      "size": {
+        "0": 469.1470947265625,
+        "1": 98
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            947
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            945
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "title": "Base Model",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "stable-diffusion-xl-base-1.0/sd_xl_base_1.0.safetensors"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 43,
+      "type": "PrimitiveNode",
+      "pos": [
+        -331.75960815429767,
+        -1020.1997314453137
+      ],
+      "size": {
+        "0": 566.647216796875,
+        "1": 171.6441192626953
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            302,
+            476,
+            494
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
+        }
+      ],
+      "title": "Fundamental Negative",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "noise, grit, dull, washed out, low contrast, blurry, deep-fried, hazy, malformed, warped, deformed"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 78,
+      "type": "PrimitiveNode",
+      "pos": [
+        -337.2395678710948,
+        -1406.3837724609382
+      ],
+      "size": {
+        "0": 340.0273742675781,
+        "1": 324.6281433105469
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            434
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_g"
+          }
+        }
+      ],
+      "title": "Linguistic Positive (G)",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "A head on portrait photograph of a majestic and elegant white tiger in an autumn forest full of foliage and trees at sunset"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 184,
+      "type": "SaveImage",
+      "pos": [
+        467.5022817382809,
+        -1395.7041728515621
+      ],
+      "size": {
+        "0": 430,
+        "1": 480
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 928,
+          "slot_index": 0
+        }
+      ],
+      "title": "Sytan Workflow",
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 8,
       "type": "VAEDecode",
       "pos": [
-        1249,
-        -797
+        1197,
+        -661
       ],
       "size": {
         "0": 140,
@@ -1363,8 +1263,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            925,
-            928
+            928,
+            956
           ],
           "slot_index": 0
         }
@@ -1376,11 +1276,94 @@
       "bgcolor": "#000"
     },
     {
+      "id": 77,
+      "type": "PrimitiveNode",
+      "pos": [
+        43.90238549804738,
+        -1401.045827148438
+      ],
+      "size": {
+        "0": 305.3854064941406,
+        "1": 320.39019775390625
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            470,
+            797
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text_l"
+          }
+        }
+      ],
+      "title": "Supporting Terms (L)",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "centered, white tiger, autumn, forest, foliage, head on, looking into the camera, fujifilm, close up, bokeh, f1.8"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 213,
+      "type": "ImageUpscaleWithModel",
+      "pos": [
+        1405,
+        -657
+      ],
+      "size": {
+        "0": 230,
+        "1": 50
+      },
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 926
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 956,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            927
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Pixel Upscale x4",
+      "properties": {
+        "Node name for S&R": "ImageUpscaleWithModel"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
       "id": 215,
       "type": "ImageScaleBy",
       "pos": [
-        1264,
-        -594
+        1417,
+        -485
       ],
       "size": {
         "0": 230,
@@ -1419,11 +1402,140 @@
       "bgcolor": "#335"
     },
     {
+      "id": 222,
+      "type": "Reroute",
+      "pos": [
+        930,
+        -1390
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 954,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            931
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 203,
+      "type": "Reroute",
+      "pos": [
+        911,
+        -962
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 929,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            954
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 201,
+      "type": "SaveImage",
+      "pos": [
+        1052,
+        -1396
+      ],
+      "size": {
+        "0": 430,
+        "1": 480
+      },
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 931
+        }
+      ],
+      "title": "2048x Upscale",
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 123,
+      "type": "Note",
+      "pos": [
+        -732,
+        -1438
+      ],
+      "size": {
+        "0": 342.64739990234375,
+        "1": 595.944091796875
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 13,
+      "mode": 0,
+      "title": "Basic Prompting Guide",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Prompting: For the linguistic prompt, you should try to explain the image you want in a single sentence with proper grammar. For example:\n\nA photograph of a (subject) in a (location) at (time)\n\nthen you use the second text field to strengthen that prompt with a few carefully selected tags that will help, such as:\n\ncinematic, bokeh, photograph, (features about subject)\n\nFull prompt example:\n\nLinguistic: A cinematic photograph of a pretty woman with blonde hair and blue eyes in a park at sunset\n\nSupporting: clouds, nature, bokeh, f1.8, cinematic lighting, entered composition\n\nPhotographic tips\n\n1. Try and use words or entities that tie into realistic imagery, such as National geographic, Vogue, ethnographic, portrait, and similar words\n\n2. Do not use words like \"realism\" or \"realistic\" when prompting for photographs, as they are associated with art styles that depict \"realistic\" things, and such will weight towards traditional or digital art\n\n3. Feel free to use compositional words, such as \"centered subject\" or \"(object) to the side\", this can help a lot for achieving different and interesting results\n\n4. I recommend not going over 6 on the positive aesthetic score for the refiner when going for realism, I find that the higher you go, the more your images are likely to go into the direction of aesthetic paintings and \n\n"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
       "id": 217,
       "type": "VAEEncode",
       "pos": [
-        1334,
-        -443
+        1323,
+        -326
       ],
       "size": {
         "0": 140,
@@ -1466,8 +1578,8 @@
       "id": 221,
       "type": "ImageBlend",
       "pos": [
-        2541,
-        -285
+        1686,
+        -666
       ],
       "size": {
         "0": 210,
@@ -1511,40 +1623,161 @@
       "bgcolor": "#335"
     },
     {
-      "id": 235,
+      "id": 234,
       "type": "Note",
       "pos": [
-        1594,
-        -653
+        1598,
+        -936
       ],
       "size": [
-        281.67213818359346,
-        372.14706298828105
+        311.390475811005,
+        159.31062109375011
       ],
       "flags": {},
-      "order": 9,
+      "order": 14,
       "mode": 0,
-      "title": "UMD Notes",
+      "title": "Contrast Fix Node",
       "properties": {
         "text": ""
       },
       "widgets_values": [
-        "Changing the \"start_at_step\" on the Upscale Mixed Diff\" node will effectively change how \"faithful/fixy\" the upscale is. If you raise the number closer to 30, it will resemble the pixel upscale more, but if you lower it down, it will fix more deformities, at the cost of potentially changing the image fundamentals.\n\nI recommend a range of 15-25, with 15 being the most fixing, and 25 being the least fixing.\n\nI strongly recommend against touching the sampler or the scheduler for the upscale sampler, as it can be very temperamental, and I found a mix that works very well as is\n\nfor different upscale sizes, mess with the downscale node. Sizes listed:\n\n0.375 is 1.5x, 0.5 is 2x, .75 is 3x, 1.0 is 4x "
+        "Contrast fix is to fix the weird black level issues with SDXL when doing multiple passes. Just mess with the value to achieve the look you want.\n\nThe higher the value you use, the more it will bring down the black tones and re-saturate the colors"
       ],
       "color": "#233",
       "bgcolor": "#355"
     },
     {
+      "id": 187,
+      "type": "UpscaleModelLoader",
+      "pos": [
+        918.9859809570313,
+        -603.4761591796874
+      ],
+      "size": {
+        "0": 387.8672790527344,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 15,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "links": [
+            926
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Upscale Model",
+      "properties": {
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "4x_NMKD-Superscale-SP_178000_G.pth"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 134,
+      "type": "Reroute",
+      "pos": [
+        944,
+        -687
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 782,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            665
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 218,
+      "type": "VAEDecode",
+      "pos": [
+        1783,
+        -399
+      ],
+      "size": {
+        "0": 140,
+        "1": 46
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 903,
+          "slot_index": 0
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 940,
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            900,
+            901
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
       "id": 216,
       "type": "KSamplerAdvanced",
       "pos": [
-        1515,
-        -210
+        1494,
+        -227
       ],
-      "size": [
-        274.1471252441406,
-        302
-      ],
+      "size": {
+        "0": 274.1471252441406,
+        "1": 302
+      },
       "flags": {
         "collapsed": false
       },
@@ -1610,7 +1843,7 @@
       },
       "widgets_values": [
         "enable",
-        422,
+        427,
         "fixed",
         30,
         7.5,
@@ -1624,457 +1857,216 @@
       "bgcolor": "#535"
     },
     {
-      "id": 218,
-      "type": "VAEDecode",
+      "id": 23,
+      "type": "KSamplerAdvanced",
       "pos": [
-        1835,
-        179
+        931.9859809570313,
+        -411.4761591796875
       ],
       "size": {
-        "0": 140,
-        "1": 46
+        "0": 270,
+        "1": 300
       },
       "flags": {
         "collapsed": false
       },
-      "order": 39,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
-          "name": "samples",
+          "name": "model",
+          "type": "MODEL",
+          "link": 918
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 480
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 299
+        },
+        {
+          "name": "latent_image",
           "type": "LATENT",
-          "link": 903,
-          "slot_index": 0
+          "link": 957
         },
         {
-          "name": "vae",
-          "type": "VAE",
-          "link": 940,
-          "slot_index": 1
+          "name": "cfg",
+          "type": "FLOAT",
+          "link": 742,
+          "widget": {
+            "name": "cfg"
+          }
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 475,
+          "widget": {
+            "name": "steps"
+          }
+        },
+        {
+          "name": "noise_seed",
+          "type": "INT",
+          "link": 482,
+          "widget": {
+            "name": "noise_seed"
+          },
+          "slot_index": 6
         }
       ],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "LATENT",
+          "type": "LATENT",
           "links": [
-            900,
-            901
+            663
           ],
           "slot_index": 0
         }
       ],
+      "title": "Refiner Pass",
       "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "color": "#222",
-      "bgcolor": "#000"
-    },
-    {
-      "id": 187,
-      "type": "UpscaleModelLoader",
-      "pos": [
-        915,
-        -739
-      ],
-      "size": [
-        387.86729370117155,
-        58
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 10,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "UPSCALE_MODEL",
-          "type": "UPSCALE_MODEL",
-          "links": [
-            926
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Upscale Model",
-      "properties": {
-        "Node name for S&R": "UpscaleModelLoader"
+        "Node name for S&R": "KSamplerAdvanced"
       },
       "widgets_values": [
-        "4x_NMKD-Superscale-SP_178000_G.pth"
+        "disable",
+        427,
+        "fixed",
+        25,
+        7.5,
+        "ddim",
+        "normal",
+        20,
+        1000,
+        "disable"
       ],
-      "color": "#432",
-      "bgcolor": "#653"
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
-      "id": 213,
-      "type": "ImageUpscaleWithModel",
+      "id": 22,
+      "type": "KSamplerAdvanced",
       "pos": [
-        1347,
-        -706
+        928,
+        -47
       ],
       "size": {
-        "0": 230,
-        "1": 50
+        "0": 270,
+        "1": 300
       },
-      "flags": {},
-      "order": 34,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "upscale_model",
-          "type": "UPSCALE_MODEL",
-          "link": 926
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 925,
-          "slot_index": 1
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            927
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Pixel Upscale x4",
-      "properties": {
-        "Node name for S&R": "ImageUpscaleWithModel"
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 237,
-      "type": "Reroute",
-      "pos": [
-        88,
-        -368
-      ],
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 947
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "MODEL",
-          "links": [
-            948
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 238,
-      "type": "Reroute",
-      "pos": [
-        90,
-        -311
-      ],
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 945,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "CLIP",
-          "links": [
-            949
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 4,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        -427,
-        -582
-      ],
-      "size": [
-        464.1470947265625,
-        112.444091796875
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            950
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            725
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            955
-          ],
-          "slot_index": 2
-        }
-      ],
-      "title": "Refiner Model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "stable-diffusion-xl-refiner-1.0/sd_xl_refiner_1.0.safetensors"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 10,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        -427,
-        -348
-      ],
-      "size": [
-        469.1470947265625,
-        98
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            947
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            945
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [],
-          "slot_index": 2
-        }
-      ],
-      "title": "Base Model",
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "stable-diffusion-xl-base-1.0/sd_xl_base_1.0.safetensors"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 43,
-      "type": "PrimitiveNode",
-      "pos": [
-        -358,
-        -887
-      ],
-      "size": [
-        566.6471923828125,
-        171.64411621093757
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            302,
-            476,
-            494
-          ],
-          "slot_index": 0,
-          "widget": {
-            "name": "text_g"
-          }
-        }
-      ],
-      "title": "Fundamental Negative",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "noise, grit, dull, washed out, low contrast, blurry, deep-fried, hazy, malformed, warped, deformed"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 78,
-      "type": "PrimitiveNode",
-      "pos": [
-        -363.479959716797,
-        -1273.184041015625
-      ],
-      "size": [
-        340.0273596191407,
-        324.6281572265626
-      ],
       "flags": {
         "collapsed": false
       },
-      "order": 14,
+      "order": 31,
       "mode": 0,
-      "outputs": [
+      "inputs": [
         {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            434
-          ],
-          "slot_index": 0,
+          "name": "model",
+          "type": "MODEL",
+          "link": 536
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 282
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 304
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 794,
+          "slot_index": 3
+        },
+        {
+          "name": "noise_seed",
+          "type": "INT",
+          "link": 214,
           "widget": {
-            "name": "text_g"
+            "name": "noise_seed"
           }
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "link": 380,
+          "widget": {
+            "name": "cfg"
+          }
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 721,
+          "widget": {
+            "name": "steps"
+          },
+          "slot_index": 6
         }
       ],
-      "title": "Linguistic Positive (G)",
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "A head on portrait photograph of a majestic and elegant white tiger in an autumn forest full of foliage and trees at sunset"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 77,
-      "type": "PrimitiveNode",
-      "pos": [
-        17.66199365234375,
-        -1267.846095703125
-      ],
-      "size": [
-        305.3854062500001,
-        320.39021191406255
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
       "outputs": [
         {
-          "name": "STRING",
-          "type": "STRING",
+          "name": "LATENT",
+          "type": "LATENT",
           "links": [
-            470,
-            797
+            957
           ],
-          "slot_index": 0,
-          "widget": {
-            "name": "text_l"
-          }
+          "slot_index": 0
         }
       ],
-      "title": "Supporting Terms (L)",
+      "title": "Base Pass",
       "properties": {
-        "Run widget replace on values": false
+        "Node name for S&R": "KSamplerAdvanced"
       },
       "widgets_values": [
-        "centered, white tiger, autumn, forest, foliage, head on, looking into the camera, fujifilm, close up, bokeh, f1.8"
+        "enable",
+        427,
+        "fixed",
+        25,
+        7.5,
+        "ddim",
+        "normal",
+        0,
+        20,
+        "enable"
       ],
-      "color": "#232",
-      "bgcolor": "#353"
+      "color": "#323",
+      "bgcolor": "#535"
     },
     {
-      "id": 123,
+      "id": 235,
       "type": "Note",
       "pos": [
-        -739,
-        -1297
+        534,
+        -87
       ],
       "size": [
-        342.64739990234375,
-        595.9441162109375
+        274.8075639648439,
+        379.04114550781264
       ],
-      "flags": {
-        "pinned": false
-      },
+      "flags": {},
       "order": 16,
       "mode": 0,
-      "title": "Basic Prompting Guide",
+      "title": "UMD Notes",
       "properties": {
         "text": ""
       },
       "widgets_values": [
-        "Prompting: For the linguistic prompt, you should try to explain the image you want in a single sentence with proper grammar. For example:\n\nA photograph of a (subject) in a (location) at (time)\n\nthen you use the second text field to strengthen that prompt with a few carefully selected tags that will help, such as:\n\ncinematic, bokeh, photograph, (features about subject)\n\nFull prompt example:\n\nLinguistic: A cinematic photograph of a pretty woman with blonde hair and blue eyes in a park at sunset\n\nSupporting: clouds, nature, bokeh, f1.8, cinematic lighting, entered composition\n\nPhotographic tips\n\n1. Try and use words or entities that tie into realistic imagery, such as National geographic, Vogue, ethnographic, portrait, and similar words\n\n2. Do not use words like \"realism\" or \"realistic\" when prompting for photographs, as they are associated with art styles that depict \"realistic\" things, and such will weight towards traditional or digital art\n\n3. Feel free to use compositional words, such as \"centered subject\" or \"(object) to the side\", this can help a lot for achieving different and interesting results\n\n4. I recommend not going over 6 on the positive aesthetic score for the refiner when going for realism, I find that the higher you go, the more your images are likely to go into the direction of aesthetic paintings and \n\n"
+        "Changing the \"start_at_step\" on the Upscale Mixed Diff\" node will effectively change how \"faithful/fixy\" the upscale is. If you raise the number closer to 30, it will resemble the pixel upscale more, but if you lower it down, it will fix more deformities, at the cost of potentially changing the image fundamentals.\n\nI recommend a range of 15-25, with 15 being the most fixing, and 25 being the least fixing.\n\nI strongly recommend against touching the sampler or the scheduler for the upscale sampler, as it can be very temperamental, and I found a mix that works very well as is\n\nfor different upscale sizes, mess with the downscale node. Sizes listed:\n\n0.375 is 1.5x, 0.5 is 2x, .75 is 3x, 1.0 is 4x "
       ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
+      "color": "#233",
+      "bgcolor": "#355"
     }
   ],
   "links": [
-    [
-      55,
-      22,
-      0,
-      23,
-      3,
-      "LATENT"
-    ],
     [
       214,
       66,
@@ -2476,14 +2468,6 @@
       "MODEL"
     ],
     [
-      925,
-      8,
-      0,
-      213,
-      1,
-      "IMAGE"
-    ],
-    [
       926,
       187,
       0,
@@ -2618,16 +2602,32 @@
       133,
       0,
       "*"
+    ],
+    [
+      956,
+      8,
+      0,
+      213,
+      1,
+      "IMAGE"
+    ],
+    [
+      957,
+      22,
+      0,
+      23,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [
     {
       "title": "Final Image",
       "bounding": [
-        2017,
-        -825,
-        1227,
-        651
+        447,
+        -1479,
+        1078,
+        605
       ],
       "color": "#444",
       "font_size": 24
@@ -2635,10 +2635,10 @@
     {
       "title": "Samplers",
       "bounding": [
-        905,
-        -902,
-        1096,
-        1159
+        909,
+        -766,
+        1030,
+        1052
       ],
       "color": "#444",
       "font_size": 24
@@ -2646,8 +2646,8 @@
     {
       "title": "Models, Encoders, and LoRAs",
       "bounding": [
-        -447,
-        -670,
+        -433,
+        -770,
         1091,
         442
       ],
@@ -2657,8 +2657,8 @@
     {
       "title": "Prompting",
       "bounding": [
-        -372,
-        -1343,
+        -345,
+        -1476,
         725,
         641
       ],
@@ -2668,8 +2668,8 @@
     {
       "title": "Gen Settings",
       "bounding": [
-        -380,
-        -200,
+        -430,
+        -288,
         448,
         588
       ],
