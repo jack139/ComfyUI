@@ -66,6 +66,8 @@ fpvae_group.add_argument("--fp16-vae", action="store_true", help="Run the VAE in
 fpvae_group.add_argument("--fp32-vae", action="store_true", help="Run the VAE in full precision fp32.")
 fpvae_group.add_argument("--bf16-vae", action="store_true", help="Run the VAE in bf16.")
 
+parser.add_argument("--cpu-vae", action="store_true", help="Run the VAE on the CPU.")
+
 fpte_group = parser.add_mutually_exclusive_group()
 fpte_group.add_argument("--fp8_e4m3fn-text-enc", action="store_true", help="Store text encoder weights in fp8 (e4m3fn variant).")
 fpte_group.add_argument("--fp8_e5m2-text-enc", action="store_true", help="Store text encoder weights in fp8 (e5m2 variant).")
@@ -110,6 +112,11 @@ parser.add_argument("--windows-standalone-build", action="store_true", help="Win
 
 parser.add_argument("--disable-metadata", action="store_true", help="Disable saving prompt metadata in files.")
 
+parser.add_argument("--multi-user", action="store_true", help="Enables per-user storage.")
+
+parser.add_argument("--verbose", action="store_true", help="Enables more debug prints.")
+
+
 if comfy.options.args_parsing:
     args = parser.parse_args()
 else:
@@ -120,3 +127,10 @@ if args.windows_standalone_build:
 
 if args.disable_auto_launch:
     args.auto_launch = False
+
+import logging
+logging_level = logging.INFO
+if args.verbose:
+    logging_level = logging.DEBUG
+
+logging.basicConfig(format="%(message)s", level=logging_level)
