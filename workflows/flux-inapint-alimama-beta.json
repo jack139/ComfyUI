@@ -349,7 +349,7 @@
       },
       "widgets_values": [
         "",
-        "A woman with blonde hair is sitting on a table wearing a green long dress. She is holding a green phone in her hand and appears to be taking a photo. There is a bag next to her on the table and a handbag beside her on the chair. The woman is looking at the phone with a smile on her face. The background includes a TV on the left wall and a couch on the right. A chair is also present in the scene."
+        "A blonde woman wearing a floral fur coat sits on a table with her legs dangling over the edge. She holds a green cell phone horizontally in her hand, appearing to be taking a photo. A bag is on the table next to her, and a handbag is on the chair next to her. The woman is looking at her cell phone with a smile on her face. The background includes a TV on the left wall and a sofa on the right. There is also a chair in the scene."
       ]
     },
     {
@@ -509,12 +509,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_gzlem_00091_.png&type=temp&subfolder=&rand=0.7994102795514291"
+            "url": "/api/view?filename=rgthree.compare._temp_ohdbx_00009_.png&type=temp&subfolder=&rand=0.10196390740153283"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_gzlem_00092_.png&type=temp&subfolder=&rand=0.4070778619534099"
+            "url": "/api/view?filename=rgthree.compare._temp_ohdbx_00010_.png&type=temp&subfolder=&rand=0.7824488231359072"
           }
         ]
       ]
@@ -1152,67 +1152,16 @@
       ]
     },
     {
-      "id": 35,
-      "type": "StringFunction|pysssss",
-      "pos": {
-        "0": 199,
-        "1": 51
-      },
-      "size": {
-        "0": 438.01171875,
-        "1": 381.4057922363281
-      },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text_c",
-          "type": "STRING",
-          "link": 198,
-          "widget": {
-            "name": "text_c"
-          },
-          "label": "text_c"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            180,
-            199,
-            200
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "STRING"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "StringFunction|pysssss"
-      },
-      "widgets_values": [
-        "append",
-        "no",
-        "A woman with blonde hair is sitting on a table wearing a green long dress. She is holding a green phone in her hand and appears to be taking a photo. There is a bag next to her on the table and a handbag beside her on the chair. The woman is looking at the phone with a smile on her face. The background includes a TV on the left wall and a couch on the right. A chair is also present in the scene.",
-        "",
-        "",
-        "A woman with blonde hair is sitting on a table wearing a green long dress. She is holding a green phone in her hand and appears to be taking a photo. There is a bag next to her on the table and a handbag beside her on the chair. The woman is looking at the phone with a smile on her face. The background includes a TV on the left wall and a couch on the right. A chair is also present in the scene."
-      ]
-    },
-    {
       "id": 136,
       "type": "PreviewImage",
       "pos": {
         "0": 737,
         "1": -927
       },
-      "size": [
-        314.3811844203933,
-        304.14188968862345
-      ],
+      "size": {
+        "0": 314.3811950683594,
+        "1": 304.1418762207031
+      },
       "flags": {},
       "order": 23,
       "mode": 0,
@@ -1276,10 +1225,10 @@
         "0": 469,
         "1": -771
       },
-      "size": [
-        210,
-        58
-      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
       "flags": {},
       "order": 18,
       "mode": 0,
@@ -1314,10 +1263,10 @@
         "0": 206,
         "1": -766
       },
-      "size": [
-        210,
-        58
-      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
       "flags": {},
       "order": 13,
       "mode": 0,
@@ -1343,6 +1292,57 @@
       },
       "widgets_values": [
         "blue"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "StringFunction|pysssss",
+      "pos": {
+        "0": 199,
+        "1": 51
+      },
+      "size": {
+        "0": 438.01171875,
+        "1": 381.4057922363281
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": 198,
+          "widget": {
+            "name": "text_c"
+          },
+          "label": "text_c"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            180,
+            199,
+            200
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringFunction|pysssss"
+      },
+      "widgets_values": [
+        "append",
+        "no",
+        "A blonde woman wearing a floral fur coat sits on a table with her legs dangling over the edge. She holds a green cell phone horizontally in her hand, appearing to be taking a photo. A bag is on the table next to her, and a handbag is on the chair next to her. The woman is looking at her cell phone with a smile on her face. The background includes a TV on the left wall and a sofa on the right. There is also a chair in the scene.",
+        "",
+        "",
+        "A blonde woman wearing a floral fur coat sits on a table with her legs dangling over the edge. She holds a green cell phone horizontally in her hand, appearing to be taking a photo. A bag is on the table next to her, and a handbag is on the chair next to her. The woman is looking at her cell phone with a smile on her face. The background includes a TV on the left wall and a sofa on the right. There is also a chair in the scene."
       ]
     }
   ],
@@ -1654,12 +1654,12 @@
   ],
   "groups": [
     {
-      "title": "Load Model",
+      "title": "AliMama Inpainting",
       "bounding": [
-        -268,
-        -264,
-        365,
-        491
+        174,
+        -980,
+        1359,
+        687
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -1678,12 +1678,12 @@
       "flags": {}
     },
     {
-      "title": "AliMama Inpainting",
+      "title": "Load Model",
       "bounding": [
-        174,
-        -980,
-        1359,
-        687
+        -268,
+        -264,
+        365,
+        491
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -1693,10 +1693,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1,
+      "scale": 0.5131581182307068,
       "offset": [
-        -102.98116000633081,
-        305.05818355356405
+        624.698838658042,
+        1037.8922357022313
       ]
     },
     "workspace_info": {
