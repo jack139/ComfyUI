@@ -83,40 +83,6 @@
       ]
     },
     {
-      "id": 17,
-      "type": "ControlNetLoader",
-      "pos": {
-        "0": 475,
-        "1": 497
-      },
-      "size": {
-        "0": 482.7211608886719,
-        "1": 58
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            27
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "CONTROL_NET"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "Flux.1-dev-Controlnet-Upscaler.safetensors"
-      ]
-    },
-    {
       "id": 23,
       "type": "ConditioningZeroOut",
       "pos": {
@@ -213,7 +179,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -305,7 +271,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -340,7 +306,7 @@
         "1": 479.2771301269531
       },
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -445,10 +411,10 @@
         "0": 1178,
         "1": 792
       },
-      "size": [
-        554.9830218004638,
-        394.48776786342023
-      ],
+      "size": {
+        "0": 554.9830322265625,
+        "1": 394.4877624511719
+      },
       "flags": {},
       "order": 12,
       "mode": 0,
@@ -680,12 +646,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_vntkc_00013_.png&type=temp&subfolder=&rand=0.477506507950197"
+            "url": "/api/view?filename=rgthree.compare._temp_umdal_00001_.png&type=temp&subfolder=&rand=0.5641658112088153"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_vntkc_00014_.png&type=temp&subfolder=&rand=0.9745216709009876"
+            "url": "/api/view?filename=rgthree.compare._temp_umdal_00002_.png&type=temp&subfolder=&rand=0.7543126479720972"
           }
         ]
       ]
@@ -746,7 +712,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        954929233162256,
+        954929233162255,
         "decrement",
         24,
         1,
@@ -782,6 +748,40 @@
         "Node name for S&R": "PreviewImage"
       },
       "widgets_values": []
+    },
+    {
+      "id": 17,
+      "type": "ControlNetLoader",
+      "pos": {
+        "0": 475,
+        "1": 497
+      },
+      "size": {
+        "0": 482.7211608886719,
+        "1": 58
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            27
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CONTROL_NET"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "Flux.1-dev-Controlnet-Upscaler/diffusion_pytorch_model.safetensors"
+      ]
     }
   ],
   "links": [
@@ -974,10 +974,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9090909090909091,
+      "scale": 0.6830134553650706,
       "offset": [
-        -1180.3935817088627,
-        -242.9125186793333
+        -323.93968824247804,
+        220.1448149044429
       ]
     }
   },

@@ -509,12 +509,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ohdbx_00009_.png&type=temp&subfolder=&rand=0.10196390740153283"
+            "url": "/api/view?filename=rgthree.compare._temp_szbzq_00001_.png&type=temp&subfolder=&rand=0.7381897835003033"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_ohdbx_00010_.png&type=temp&subfolder=&rand=0.7824488231359072"
+            "url": "/api/view?filename=rgthree.compare._temp_szbzq_00002_.png&type=temp&subfolder=&rand=0.326836452729641"
           }
         ]
       ]
@@ -763,40 +763,6 @@
       "widgets_values": []
     },
     {
-      "id": 133,
-      "type": "ControlNetLoader",
-      "pos": {
-        "0": 1063.6002197265625,
-        "1": -729.2000732421875
-      },
-      "size": {
-        "0": 435.60980224609375,
-        "1": 100.55636596679688
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CONTROL_NET",
-          "type": "CONTROL_NET",
-          "links": [
-            212
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "CONTROL_NET"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ControlNetLoader"
-      },
-      "widgets_values": [
-        "FLUX.1-dev-Controlnet-Inpainting-Beta.safetensors"
-      ]
-    },
-    {
       "id": 141,
       "type": "CFGGuider",
       "pos": {
@@ -940,7 +906,7 @@
         "1": 314
       },
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1086,7 +1052,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1343,6 +1309,40 @@
         "",
         "",
         "A blonde woman wearing a floral fur coat sits on a table with her legs dangling over the edge. She holds a green cell phone horizontally in her hand, appearing to be taking a photo. A bag is on the table next to her, and a handbag is on the chair next to her. The woman is looking at her cell phone with a smile on her face. The background includes a TV on the left wall and a sofa on the right. There is also a chair in the scene."
+      ]
+    },
+    {
+      "id": 133,
+      "type": "ControlNetLoader",
+      "pos": {
+        "0": 1063.6002197265625,
+        "1": -729.2000732421875
+      },
+      "size": {
+        "0": 435.60980224609375,
+        "1": 100.55636596679688
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            212
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CONTROL_NET"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "FLUX.1-dev-Controlnet-Inpainting-Beta/diffusion_pytorch_model.safetensors"
       ]
     }
   ],
@@ -1654,12 +1654,12 @@
   ],
   "groups": [
     {
-      "title": "AliMama Inpainting",
+      "title": "Load Model",
       "bounding": [
-        174,
-        -980,
-        1359,
-        687
+        -268,
+        -264,
+        365,
+        491
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -1678,12 +1678,12 @@
       "flags": {}
     },
     {
-      "title": "Load Model",
+      "title": "AliMama Inpainting",
       "bounding": [
-        -268,
-        -264,
-        365,
-        491
+        174,
+        -980,
+        1359,
+        687
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -1693,10 +1693,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5131581182307068,
+      "scale": 0.5644739300537773,
       "offset": [
-        624.698838658042,
-        1037.8922357022313
+        520.353279302977,
+        872.6824873589886
       ]
     },
     "workspace_info": {
