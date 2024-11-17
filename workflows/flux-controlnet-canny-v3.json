@@ -1,6 +1,6 @@
 {
-  "last_node_id": 48,
-  "last_link_id": 115,
+  "last_node_id": 49,
+  "last_link_id": 117,
   "nodes": [
     {
       "id": 48,
@@ -121,40 +121,6 @@
       ]
     },
     {
-      "id": 32,
-      "type": "UNETLoader",
-      "pos": {
-        "0": 101,
-        "1": 82
-      },
-      "size": {
-        "0": 315,
-        "1": 82
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            58
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UNETLoader"
-      },
-      "widgets_values": [
-        "FLUX.1-dev/flux1-dev.safetensors",
-        "fp8_e4m3fn"
-      ]
-    },
-    {
       "id": 13,
       "type": "LoadFluxControlNet",
       "pos": {
@@ -166,7 +132,7 @@
         "1": 86.47058868408203
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -200,7 +166,7 @@
         "1": 98
       },
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -293,7 +259,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -326,7 +292,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -350,73 +316,6 @@
       ]
     },
     {
-      "id": 3,
-      "type": "XlabsSampler",
-      "pos": {
-        "0": 892,
-        "1": -74
-      },
-      "size": [
-        316.87721727693474,
-        282
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 58,
-          "slot_index": 0
-        },
-        {
-          "name": "conditioning",
-          "type": "CONDITIONING",
-          "link": 18
-        },
-        {
-          "name": "neg_conditioning",
-          "type": "CONDITIONING",
-          "link": 26
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 66,
-          "shape": 7
-        },
-        {
-          "name": "controlnet_condition",
-          "type": "ControlNetCondition",
-          "link": 28,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            6
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "XlabsSampler"
-      },
-      "widgets_values": [
-        324242532548,
-        "fixed",
-        25,
-        1,
-        3.5,
-        0,
-        1
-      ]
-    },
-    {
       "id": 7,
       "type": "VAEDecode",
       "pos": {
@@ -428,7 +327,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -466,14 +365,14 @@
         "0": 908,
         "1": -540
       },
-      "size": [
-        294.83465064143866,
-        294.6264164663211
-      ],
+      "size": {
+        "0": 294.83465576171875,
+        "1": 294.62640380859375
+      },
       "flags": {
         "collapsed": false
       },
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -495,12 +394,12 @@
         "0": 1236,
         "1": -200
       },
-      "size": [
-        330.19248646690903,
-        302.42064837247335
-      ],
+      "size": {
+        "0": 330.1924743652344,
+        "1": 302.420654296875
+      },
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -555,6 +454,147 @@
         "Anime artwork, little girl, wearing a light blue long-sleeved T-shirt, black sweatpants, and white sneakers. anime style, key visual, vibrant, studio anime, highly detailed. There are many famous paintings on the background wall, such as Van Gogh's Starry Sky, Leonardo da Vinci's Mona Lisa, etc. ",
         "Anime artwork, little girl, wearing a light blue long-sleeved T-shirt, black sweatpants, and white sneakers. anime style, key visual, vibrant, studio anime, highly detailed. There are many famous paintings on the background wall, such as Van Gogh's Starry Sky, Leonardo da Vinci's Mona Lisa, etc. ",
         4
+      ]
+    },
+    {
+      "id": 32,
+      "type": "UNETLoader",
+      "pos": {
+        "0": 101,
+        "1": 82
+      },
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            117
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "FLUX.1-dev/flux1-dev.safetensors",
+        "fp8_e4m3fn"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "XlabsSampler",
+      "pos": {
+        "0": 896,
+        "1": -66
+      },
+      "size": {
+        "0": 316.8772277832031,
+        "1": 282
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 116,
+          "slot_index": 0
+        },
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 18
+        },
+        {
+          "name": "neg_conditioning",
+          "type": "CONDITIONING",
+          "link": 26
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 66,
+          "shape": 7
+        },
+        {
+          "name": "controlnet_condition",
+          "type": "ControlNetCondition",
+          "link": 28,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            6
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "XlabsSampler"
+      },
+      "widgets_values": [
+        180405017405629,
+        "randomize",
+        8,
+        1,
+        3.5,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 49,
+      "type": "LoraLoaderModelOnly",
+      "pos": {
+        "0": 96,
+        "1": 224
+      },
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 117
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            116
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "FLUX.1-Turbo-Alpha/diffusion_pytorch_model.safetensors",
+        1
       ]
     }
   ],
@@ -624,14 +664,6 @@
       "FluxControlNet"
     ],
     [
-      58,
-      32,
-      0,
-      3,
-      0,
-      "MODEL"
-    ],
-    [
       66,
       6,
       0,
@@ -670,6 +702,22 @@
       14,
       1,
       "IMAGE"
+    ],
+    [
+      116,
+      49,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      117,
+      32,
+      0,
+      49,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [],
@@ -678,8 +726,8 @@
     "ds": {
       "scale": 1.0834705943388703,
       "offset": [
-        -15.10628099336623,
-        477.782615348685
+        -147.08955838656365,
+        432.557576241925
       ]
     }
   },
