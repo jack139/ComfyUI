@@ -3,11 +3,197 @@
   "last_link_id": 115,
   "nodes": [
     {
+      "id": 48,
+      "type": "CannyEdgePreprocessor",
+      "pos": {
+        "0": 102,
+        "1": -227
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 112
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            113,
+            114
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CannyEdgePreprocessor"
+      },
+      "widgets_values": [
+        100,
+        200,
+        1024
+      ]
+    },
+    {
+      "id": 4,
+      "type": "DualCLIPLoader",
+      "pos": {
+        "0": 104,
+        "1": -79
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            2,
+            27
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualCLIPLoader"
+      },
+      "widgets_values": [
+        "clip_l.safetensors",
+        "t5xxl_fp16.safetensors",
+        "flux"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "LoadImage",
+      "pos": {
+        "0": -253,
+        "1": -229
+      },
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            112
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "微信图片_2024-11-17_103752_602.png",
+        "image"
+      ]
+    },
+    {
+      "id": 32,
+      "type": "UNETLoader",
+      "pos": {
+        "0": 101,
+        "1": 82
+      },
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            58
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "FLUX.1-dev/flux1-dev.safetensors",
+        "fp8_e4m3fn"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "LoadFluxControlNet",
+      "pos": {
+        "0": 98,
+        "1": -366
+      },
+      "size": {
+        "0": 316.83343505859375,
+        "1": 86.47058868408203
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "ControlNet",
+          "type": "FluxControlNet",
+          "links": [
+            44
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadFluxControlNet"
+      },
+      "widgets_values": [
+        "flux-dev",
+        "flux-canny-controlnet-v3.safetensors"
+      ]
+    },
+    {
       "id": 14,
       "type": "ApplyFluxControlNet",
       "pos": {
-        "0": 546,
-        "1": -264
+        "0": 457,
+        "1": -333
       },
       "size": {
         "0": 393,
@@ -54,138 +240,11 @@
       ]
     },
     {
-      "id": 39,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 444,
-        "1": -130
-      },
-      "size": {
-        "0": 210,
-        "1": 246
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 113
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 46,
-      "type": "SaveImage",
-      "pos": {
-        "0": 621,
-        "1": 146
-      },
-      "size": {
-        "0": 315,
-        "1": 270
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 115
-        }
-      ],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "canny_process"
-      ]
-    },
-    {
-      "id": 21,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 1088,
-        "1": -373
-      },
-      "size": {
-        "0": 210,
-        "1": 246
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 79,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 48,
-      "type": "CannyEdgePreprocessor",
-      "pos": {
-        "0": 102,
-        "1": -227
-      },
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 112
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            113,
-            114,
-            115
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CannyEdgePreprocessor"
-      },
-      "widgets_values": [
-        100,
-        200,
-        1024
-      ]
-    },
-    {
       "id": 19,
       "type": "CLIPTextEncodeFlux",
       "pos": {
-        "0": 203,
-        "1": 167
+        "0": 454,
+        "1": 103
       },
       "size": {
         "0": 400,
@@ -217,24 +276,57 @@
         "Node name for S&R": "CLIPTextEncodeFlux"
       },
       "widgets_values": [
-        "bad photo",
-        "bad photo",
+        "photo, deformed, black and white, realism, disfigured, low contrast",
+        "photo, deformed, black and white, realism, disfigured, low contrast",
         4
+      ]
+    },
+    {
+      "id": 8,
+      "type": "VAELoader",
+      "pos": {
+        "0": 100,
+        "1": -476
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            7
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "FLUX.1-dev/ae.safetensors"
       ]
     },
     {
       "id": 6,
       "type": "EmptyLatentImage",
       "pos": {
-        "0": 850,
-        "1": 449
+        "0": 486,
+        "1": -497
       },
       "size": {
         "0": 315,
         "1": 106
       },
       "flags": {},
-      "order": 0,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -258,131 +350,18 @@
       ]
     },
     {
-      "id": 7,
-      "type": "VAEDecode",
-      "pos": {
-        "0": 1164,
-        "1": 40
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 6,
-          "slot_index": 0
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            79,
-            101
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 23,
-      "type": "SaveImage",
-      "pos": {
-        "0": 1441,
-        "1": -122
-      },
-      "size": {
-        "0": 356.1513671875,
-        "1": 270
-      },
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 101
-        }
-      ],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "canny_res"
-      ]
-    },
-    {
-      "id": 5,
-      "type": "CLIPTextEncodeFlux",
-      "pos": {
-        "0": 688,
-        "1": -110
-      },
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 2,
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            18
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncodeFlux"
-      },
-      "widgets_values": [
-        "cyberpank dining room, full hd, cinematic",
-        "cyberpank dining room, full hd, cinematic",
-        4
-      ]
-    },
-    {
       "id": 3,
       "type": "XlabsSampler",
       "pos": {
-        "0": 948,
-        "1": 149
+        "0": 892,
+        "1": -74
       },
-      "size": {
-        "0": 342.5999755859375,
-        "1": 282
-      },
+      "size": [
+        316.87721727693474,
+        282
+      ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -438,180 +417,144 @@
       ]
     },
     {
-      "id": 13,
-      "type": "LoadFluxControlNet",
+      "id": 7,
+      "type": "VAEDecode",
       "pos": {
-        "0": 121,
-        "1": -375
+        "0": 938,
+        "1": -189
       },
       "size": {
-        "0": 316.83343505859375,
-        "1": 86.47058868408203
+        "0": 210,
+        "1": 46
       },
       "flags": {},
-      "order": 1,
+      "order": 12,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "ControlNet",
-          "type": "FluxControlNet",
-          "links": [
-            44
-          ],
-          "slot_index": 0,
-          "shape": 3
+          "name": "samples",
+          "type": "LATENT",
+          "link": 6,
+          "slot_index": 0
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 7
         }
       ],
-      "properties": {
-        "Node name for S&R": "LoadFluxControlNet"
-      },
-      "widgets_values": [
-        "flux-dev",
-        "flux-canny-controlnet-v3.safetensors"
-      ]
-    },
-    {
-      "id": 4,
-      "type": "DualCLIPLoader",
-      "pos": {
-        "0": 104,
-        "1": -79
-      },
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            2,
-            27
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DualCLIPLoader"
-      },
-      "widgets_values": [
-        "clip_l.safetensors",
-        "t5xxl_fp16.safetensors",
-        "flux"
-      ]
-    },
-    {
-      "id": 16,
-      "type": "LoadImage",
-      "pos": {
-        "0": -253,
-        "1": -229
-      },
-      "size": {
-        "0": 315,
-        "1": 314
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
       "outputs": [
         {
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            112
+            101
           ],
           "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
           "shape": 3
         }
       ],
       "properties": {
-        "Node name for S&R": "LoadImage"
+        "Node name for S&R": "VAEDecode"
       },
+      "widgets_values": []
+    },
+    {
+      "id": 39,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 908,
+        "1": -540
+      },
+      "size": [
+        294.83465064143866,
+        294.6264164663211
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 113
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 23,
+      "type": "SaveImage",
+      "pos": {
+        "0": 1236,
+        "1": -200
+      },
+      "size": [
+        330.19248646690903,
+        302.42064837247335
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 101
+        }
+      ],
+      "outputs": [],
+      "properties": {},
       "widgets_values": [
-        "example.png",
-        "image"
+        "canny_res"
       ]
     },
     {
-      "id": 32,
-      "type": "UNETLoader",
+      "id": 5,
+      "type": "CLIPTextEncodeFlux",
       "pos": {
-        "0": 502,
-        "1": 452
+        "0": 455,
+        "1": -165
       },
       "size": {
-        "0": 315,
-        "1": 82
+        "0": 400,
+        "1": 200
       },
       "flags": {},
-      "order": 4,
+      "order": 6,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 2,
+          "slot_index": 0
+        }
+      ],
       "outputs": [
         {
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
           "links": [
-            58
+            18
           ],
           "slot_index": 0,
           "shape": 3
         }
       ],
       "properties": {
-        "Node name for S&R": "UNETLoader"
+        "Node name for S&R": "CLIPTextEncodeFlux"
       },
       "widgets_values": [
-        "FLUX.1-dev/flux1-dev.safetensors",
-        "fp8_e4m3fn"
-      ]
-    },
-    {
-      "id": 8,
-      "type": "VAELoader",
-      "pos": {
-        "0": 1111,
-        "1": -84
-      },
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            7
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "FLUX.1-dev/ae.safetensors"
+        "Anime artwork, little girl, wearing a light blue long-sleeved T-shirt, black sweatpants, and white sneakers. anime style, key visual, vibrant, studio anime, highly detailed. There are many famous paintings on the background wall, such as Van Gogh's Starry Sky, Leonardo da Vinci's Mona Lisa, etc. ",
+        "Anime artwork, little girl, wearing a light blue long-sleeved T-shirt, black sweatpants, and white sneakers. anime style, key visual, vibrant, studio anime, highly detailed. There are many famous paintings on the background wall, such as Van Gogh's Starry Sky, Leonardo da Vinci's Mona Lisa, etc. ",
+        4
       ]
     }
   ],
@@ -697,14 +640,6 @@
       "LATENT"
     ],
     [
-      79,
-      7,
-      0,
-      21,
-      0,
-      "IMAGE"
-    ],
-    [
       101,
       7,
       0,
@@ -735,24 +670,16 @@
       14,
       1,
       "IMAGE"
-    ],
-    [
-      115,
-      48,
-      0,
-      46,
-      0,
-      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9090909090909095,
+      "scale": 1.0834705943388703,
       "offset": [
-        204.63885855804145,
-        439.6662106022317
+        -15.10628099336623,
+        477.782615348685
       ]
     }
   },
