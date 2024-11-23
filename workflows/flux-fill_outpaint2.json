@@ -1,6 +1,6 @@
 {
   "last_node_id": 51,
-  "last_link_id": 140,
+  "last_link_id": 147,
   "nodes": [
     {
       "id": 8,
@@ -14,7 +14,7 @@
         46
       ],
       "flags": {},
-      "order": 12,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -58,7 +58,7 @@
         443.8271484375
       ],
       "flags": {},
-      "order": 13,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -78,8 +78,8 @@
       "id": 10,
       "type": "VAELoader",
       "pos": [
-        646.2979736328125,
-        231.6083526611328
+        671,
+        237
       ],
       "size": [
         311.81634521484375,
@@ -150,8 +150,8 @@
       "id": 12,
       "type": "UNETLoader",
       "pos": [
-        644.2979736328125,
-        85.60841369628906
+        675,
+        82
       ],
       "size": [
         315,
@@ -195,7 +195,7 @@
         58
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -230,8 +230,8 @@
       "id": 38,
       "type": "LoadImage",
       "pos": [
-        -58,
-        99
+        -19,
+        80
       ],
       "size": [
         319.74969482421875,
@@ -246,7 +246,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            139
+            141,
+            143
           ],
           "slot_index": 0,
           "shape": 3,
@@ -273,15 +274,15 @@
       "id": 40,
       "type": "InpaintModelConditioning",
       "pos": [
-        1070.298095703125,
-        186.60841369628906
+        1064,
+        177
       ],
       "size": [
         302.7054443359375,
         138
       ],
       "flags": {},
-      "order": 10,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -302,12 +303,12 @@
         {
           "name": "pixels",
           "type": "IMAGE",
-          "link": 118
+          "link": 141
         },
         {
           "name": "mask",
           "type": "MASK",
-          "link": 119
+          "link": 146
         }
       ],
       "outputs": [
@@ -344,162 +345,6 @@
       ]
     },
     {
-      "id": 42,
-      "type": "DifferentialDiffusion",
-      "pos": [
-        1019.298095703125,
-        88.60841369628906
-      ],
-      "size": [
-        184.8000030517578,
-        30.397838592529297
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 125
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            126
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DifferentialDiffusion"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 44,
-      "type": "CLIPTextEncode",
-      "pos": [
-        342.2979736328125,
-        605.6084594726562
-      ],
-      "size": [
-        413.8202209472656,
-        157.0702362060547
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 127
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            130
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "CLIP Text Encode (Negative Prompt)",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        ""
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
-      "id": 45,
-      "type": "PreviewImage",
-      "pos": [
-        911,
-        531
-      ],
-      "size": [
-        314.3811950683594,
-        304.1418762207031
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 132,
-          "label": "images"
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 39,
-      "type": "ImagePadForOutpaint",
-      "pos": [
-        284,
-        153
-      ],
-      "size": [
-        315,
-        174
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 139
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            118,
-            132
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            119
-          ],
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImagePadForOutpaint"
-      },
-      "widgets_values": [
-        400,
-        400,
-        400,
-        400,
-        24
-      ]
-    },
-    {
       "id": 41,
       "type": "KSampler",
       "pos": [
@@ -511,7 +356,7 @@
         262
       ],
       "flags": {},
-      "order": 11,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -549,13 +394,209 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        445536049120365,
+        348197432273459,
         "randomize",
         20,
         1,
         "euler",
         "normal",
         1
+      ]
+    },
+    {
+      "id": 42,
+      "type": "DifferentialDiffusion",
+      "pos": [
+        1042,
+        93
+      ],
+      "size": [
+        184.8000030517578,
+        30.397838592529297
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 125
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            126
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DifferentialDiffusion"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 44,
+      "type": "CLIPTextEncode",
+      "pos": [
+        342.2979736328125,
+        605.6084594726562
+      ],
+      "size": [
+        413.8202209472656,
+        157.0702362060547
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 127
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            130
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "CLIP Text Encode (Negative Prompt)",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 46,
+      "type": "SAMModelLoader (segment anything)",
+      "pos": [
+        -95.4825668334961,
+        -213.45843505859375
+      ],
+      "size": [
+        387.46063232421875,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SAM_MODEL",
+          "type": "SAM_MODEL",
+          "links": [
+            133
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SAMModelLoader (segment anything)"
+      },
+      "widgets_values": [
+        "sam_vit_h (2.56GB)"
+      ]
+    },
+    {
+      "id": 47,
+      "type": "GroundingDinoModelLoader (segment anything)",
+      "pos": [
+        -92.48257446289062,
+        -104.45845794677734
+      ],
+      "size": [
+        377.11029052734375,
+        58
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "GROUNDING_DINO_MODEL",
+          "type": "GROUNDING_DINO_MODEL",
+          "links": [
+            134
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GroundingDinoModelLoader (segment anything)"
+      },
+      "widgets_values": [
+        "GroundingDINO_SwinT_OGC (694MB)"
+      ]
+    },
+    {
+      "id": 48,
+      "type": "GroundingDinoSAMSegment (segment anything)",
+      "pos": [
+        317.5171813964844,
+        -207.45843505859375
+      ],
+      "size": [
+        352.79998779296875,
+        122
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "sam_model",
+          "type": "SAM_MODEL",
+          "link": 133
+        },
+        {
+          "name": "grounding_dino_model",
+          "type": "GROUNDING_DINO_MODEL",
+          "link": 134
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 143
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            138
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
+      },
+      "widgets_values": [
+        "little girl",
+        0.3
       ]
     },
     {
@@ -570,7 +611,7 @@
         164.31304931640625
       ],
       "flags": {},
-      "order": 4,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -596,10 +637,134 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "A little girl stands in the gallery"
+        "The little girl is standing on the beach, with the sea behind her and a pirate ship in the distance, in a realistic and dreamy style"
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 51,
+      "type": "GrowMaskWithBlur",
+      "pos": [
+        704.2406005859375,
+        -255.8118438720703
+      ],
+      "size": [
+        315,
+        246
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 138,
+          "label": "mask"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "mask"
+        },
+        {
+          "name": "mask_inverted",
+          "type": "MASK",
+          "links": [
+            146,
+            147
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "mask_inverted"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GrowMaskWithBlur"
+      },
+      "widgets_values": [
+        1,
+        0,
+        true,
+        false,
+        0,
+        0,
+        0,
+        false
+      ]
+    },
+    {
+      "id": 50,
+      "type": "PreviewImage",
+      "pos": [
+        1282.1881103515625,
+        -256.9728698730469
+      ],
+      "size": [
+        258.391357421875,
+        246
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 135,
+          "label": "images"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 49,
+      "type": "MaskToImage",
+      "pos": [
+        1068.1881103515625,
+        -237.97286987304688
+      ],
+      "size": [
+        176.39999389648438,
+        29.597196578979492
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 147,
+          "label": "mask"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            135
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskToImage"
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -626,22 +791,6 @@
       8,
       1,
       "VAE"
-    ],
-    [
-      118,
-      39,
-      0,
-      40,
-      3,
-      "IMAGE"
-    ],
-    [
-      119,
-      39,
-      1,
-      40,
-      4,
-      "MASK"
     ],
     [
       120,
@@ -732,30 +881,92 @@
       "VAE"
     ],
     [
-      132,
-      39,
+      133,
+      46,
       0,
-      45,
+      48,
+      0,
+      "SAM_MODEL"
+    ],
+    [
+      134,
+      47,
+      0,
+      48,
+      1,
+      "GROUNDING_DINO_MODEL"
+    ],
+    [
+      135,
+      49,
+      0,
+      50,
       0,
       "IMAGE"
     ],
     [
-      139,
+      138,
+      48,
+      1,
+      51,
+      0,
+      "MASK"
+    ],
+    [
+      141,
       38,
       0,
-      39,
-      0,
+      40,
+      3,
       "IMAGE"
+    ],
+    [
+      143,
+      38,
+      0,
+      48,
+      2,
+      "IMAGE"
+    ],
+    [
+      146,
+      51,
+      1,
+      40,
+      4,
+      "MASK"
+    ],
+    [
+      147,
+      51,
+      1,
+      49,
+      0,
+      "MASK"
     ]
   ],
-  "groups": [],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Mask",
+      "bounding": [
+        -124.48593139648438,
+        -302.5519714355469,
+        1691.8482666015625,
+        309.4052429199219
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.814027493868424,
+      "scale": 0.7400249944258466,
       "offset": [
-        255.17751479065194,
-        146.6659546102623
+        444.2005914129104,
+        365.5098343161532
       ]
     },
     "groupNodes": {}
