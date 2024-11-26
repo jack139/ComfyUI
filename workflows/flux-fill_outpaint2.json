@@ -1,7 +1,50 @@
 {
-  "last_node_id": 51,
-  "last_link_id": 147,
+  "last_node_id": 57,
+  "last_link_id": 161,
   "nodes": [
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        336.2979736328125,
+        393.6082763671875
+      ],
+      "size": [
+        422.84503173828125,
+        164.31304931640625
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 10,
+          "label": "clip"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            129
+          ],
+          "slot_index": 0,
+          "label": "CONDITIONING"
+        }
+      ],
+      "title": "CLIP Text Encode (Positive Prompt)",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "Two superhero images, one in Superman's suit and one in Batman's suit and cape, with a burning planet in the background"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
     {
       "id": 8,
       "type": "VAEDecode",
@@ -14,7 +57,7 @@
         46
       ],
       "flags": {},
-      "order": 16,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -50,15 +93,15 @@
       "id": 9,
       "type": "SaveImage",
       "pos": [
-        1337.2979736328125,
-        431.6082458496094
+        1337,
+        432
       ],
       "size": [
         496.8912658691406,
         443.8271484375
       ],
       "flags": {},
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -130,7 +173,7 @@
           "type": "CLIP",
           "links": [
             10,
-            127
+            160
           ],
           "slot_index": 0,
           "shape": 3,
@@ -166,7 +209,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            125
+            158
           ],
           "slot_index": 0,
           "shape": 3,
@@ -178,7 +221,7 @@
       },
       "widgets_values": [
         "flux1-fill-dev.safetensors",
-        "fp8_e4m3fn"
+        "default"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -246,8 +289,8 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            141,
-            143
+            143,
+            154
           ],
           "slot_index": 0,
           "shape": 3,
@@ -266,7 +309,7 @@
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "微信图片_2024-11-17_103752_602.png",
+        "微信图片_2024-11-25_180018_550.png",
         "image"
       ]
     },
@@ -282,7 +325,7 @@
         138
       ],
       "flags": {},
-      "order": 12,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -293,7 +336,7 @@
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 130
+          "link": 161
         },
         {
           "name": "vae",
@@ -303,7 +346,7 @@
         {
           "name": "pixels",
           "type": "IMAGE",
-          "link": 141
+          "link": 156
         },
         {
           "name": "mask",
@@ -341,74 +384,15 @@
         "Node name for S&R": "InpaintModelConditioning"
       },
       "widgets_values": [
-        true
-      ]
-    },
-    {
-      "id": 41,
-      "type": "KSampler",
-      "pos": [
-        1433.2982177734375,
-        115.6083984375
-      ],
-      "size": [
-        315,
-        262
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 126
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 121
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 122
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 123
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            120
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        348197432273459,
-        "randomize",
-        20,
-        1,
-        "euler",
-        "normal",
-        1
+        false
       ]
     },
     {
       "id": 42,
       "type": "DifferentialDiffusion",
       "pos": [
-        1042,
-        93
+        1113,
+        76
       ],
       "size": [
         184.8000030517578,
@@ -421,7 +405,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 125
+          "link": 158
         }
       ],
       "outputs": [
@@ -429,7 +413,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            126
+            159
           ],
           "slot_index": 0
         }
@@ -438,47 +422,6 @@
         "Node name for S&R": "DifferentialDiffusion"
       },
       "widgets_values": []
-    },
-    {
-      "id": 44,
-      "type": "CLIPTextEncode",
-      "pos": [
-        342.2979736328125,
-        605.6084594726562
-      ],
-      "size": [
-        413.8202209472656,
-        157.0702362060547
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 127
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            130
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "CLIP Text Encode (Negative Prompt)",
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        ""
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
     },
     {
       "id": 46,
@@ -595,52 +538,77 @@
         "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
       },
       "widgets_values": [
-        "little girl",
+        "two faces",
         0.3
       ]
     },
     {
-      "id": 6,
-      "type": "CLIPTextEncode",
+      "id": 49,
+      "type": "MaskToImage",
       "pos": [
-        336.2979736328125,
-        393.6082763671875
+        1068.1881103515625,
+        -237.97286987304688
       ],
       "size": [
-        422.84503173828125,
-        164.31304931640625
+        176.39999389648438,
+        29.597196578979492
       ],
       "flags": {},
-      "order": 6,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 10,
-          "label": "clip"
+          "name": "mask",
+          "type": "MASK",
+          "link": 147,
+          "label": "mask"
         }
       ],
       "outputs": [
         {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            129
+            135,
+            155
           ],
           "slot_index": 0,
-          "label": "CONDITIONING"
+          "shape": 3,
+          "label": "IMAGE"
         }
       ],
-      "title": "CLIP Text Encode (Positive Prompt)",
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "MaskToImage"
       },
-      "widgets_values": [
-        "The little girl is standing on the beach, with the sea behind her and a pirate ship in the distance, in a realistic and dreamy style"
+      "widgets_values": []
+    },
+    {
+      "id": 50,
+      "type": "PreviewImage",
+      "pos": [
+        1282,
+        -257
       ],
-      "color": "#232",
-      "bgcolor": "#353"
+      "size": [
+        258.391357421875,
+        246
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 135,
+          "label": "images"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
     },
     {
       "id": 51,
@@ -678,7 +646,8 @@
           "type": "MASK",
           "links": [
             146,
-            147
+            147,
+            153
           ],
           "slot_index": 1,
           "shape": 3,
@@ -700,24 +669,77 @@
       ]
     },
     {
-      "id": 50,
+      "id": 55,
+      "type": "ImageCompositeMasked",
+      "pos": [
+        1331,
+        -494
+      ],
+      "size": [
+        315,
+        146
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "IMAGE",
+          "link": 154
+        },
+        {
+          "name": "source",
+          "type": "IMAGE",
+          "link": 155
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 153,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            156,
+            157
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageCompositeMasked"
+      },
+      "widgets_values": [
+        0,
+        0,
+        true
+      ]
+    },
+    {
+      "id": 56,
       "type": "PreviewImage",
       "pos": [
-        1282.1881103515625,
-        -256.9728698730469
+        1737,
+        -422
       ],
       "size": [
         258.391357421875,
         246
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 135,
+          "link": 157,
           "label": "images"
         }
       ],
@@ -728,43 +750,106 @@
       "widgets_values": []
     },
     {
-      "id": 49,
-      "type": "MaskToImage",
+      "id": 57,
+      "type": "CLIPTextEncode",
       "pos": [
-        1068.1881103515625,
-        -237.97286987304688
+        417,
+        648
       ],
       "size": [
-        176.39999389648438,
-        29.597196578979492
+        425.27801513671875,
+        180.6060791015625
       ],
-      "flags": {},
-      "order": 13,
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
-          "name": "mask",
-          "type": "MASK",
-          "link": 147,
-          "label": "mask"
+          "name": "clip",
+          "type": "CLIP",
+          "link": 160
         }
       ],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
           "links": [
-            135
+            161
           ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "IMAGE"
+          "slot_index": 0
+        }
+      ],
+      "title": "CLIP Text Encode (Negative Prompt)",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 41,
+      "type": "KSampler",
+      "pos": [
+        1433.2982177734375,
+        115.6083984375
+      ],
+      "size": [
+        315,
+        262
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 159
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 121
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 122
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 123
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            120
+          ],
+          "slot_index": 0
         }
       ],
       "properties": {
-        "Node name for S&R": "MaskToImage"
+        "Node name for S&R": "KSampler"
       },
-      "widgets_values": []
+      "widgets_values": [
+        1015359688400491,
+        "randomize",
+        20,
+        1,
+        "euler",
+        "normal",
+        1
+      ]
     }
   ],
   "links": [
@@ -833,43 +918,11 @@
       "CONDITIONING"
     ],
     [
-      125,
-      12,
-      0,
-      42,
-      0,
-      "MODEL"
-    ],
-    [
-      126,
-      42,
-      0,
-      41,
-      0,
-      "MODEL"
-    ],
-    [
-      127,
-      11,
-      0,
-      44,
-      0,
-      "CLIP"
-    ],
-    [
       129,
       6,
       0,
       26,
       0,
-      "CONDITIONING"
-    ],
-    [
-      130,
-      44,
-      0,
-      40,
-      1,
       "CONDITIONING"
     ],
     [
@@ -913,14 +966,6 @@
       "MASK"
     ],
     [
-      141,
-      38,
-      0,
-      40,
-      3,
-      "IMAGE"
-    ],
-    [
       143,
       38,
       0,
@@ -943,6 +988,78 @@
       49,
       0,
       "MASK"
+    ],
+    [
+      153,
+      51,
+      1,
+      55,
+      2,
+      "MASK"
+    ],
+    [
+      154,
+      38,
+      0,
+      55,
+      0,
+      "IMAGE"
+    ],
+    [
+      155,
+      49,
+      0,
+      55,
+      1,
+      "IMAGE"
+    ],
+    [
+      156,
+      55,
+      0,
+      40,
+      3,
+      "IMAGE"
+    ],
+    [
+      157,
+      55,
+      0,
+      56,
+      0,
+      "IMAGE"
+    ],
+    [
+      158,
+      12,
+      0,
+      42,
+      0,
+      "MODEL"
+    ],
+    [
+      159,
+      42,
+      0,
+      41,
+      0,
+      "MODEL"
+    ],
+    [
+      160,
+      11,
+      0,
+      57,
+      0,
+      "CLIP"
+    ],
+    [
+      161,
+      57,
+      0,
+      40,
+      1,
+      "CONDITIONING"
     ]
   ],
   "groups": [
@@ -963,10 +1080,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7400249944258466,
+      "scale": 0.8140274938684349,
       "offset": [
-        444.2005914129104,
-        365.5098343161532
+        69.44098353304128,
+        211.1297170430781
       ]
     },
     "groupNodes": {}
